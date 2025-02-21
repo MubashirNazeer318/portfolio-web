@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="portfolio.png"> 
+</head>
+<body>
+  <div class="navigation">
+    <div class="banner">
+      <img src="banner.jpg" class="cover">
+    </div>
+    <div class="navLink">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <section class="sec">
+    <header>
+      <div class="toggle"></div>
+      <a href="#" class="btn">Hire Me</a>
+    </header>
+<div class="content">
+      <p>
+        I am a dedicated <span class="highlight">Network Engineer</span> and <span class="highlight">AI enthusiast</span> with expertise in designing and managing robust network infrastructures alongside leveraging artificial intelligence technologies. With a strong foundation in network security, routing, and automation, I have successfully implemented IT solutions for large-scale projects, such as data centers and wireless networks.
+      </p>
+      <p>
+        My proficiency in AI frameworks like <span class="highlight">Pandas</span>, <span class="highlight">NumPy</span>, and <span class="highlight">Scikit-Learn</span> enables me to develop intelligent systems, blending technology and innovation to optimize performance and drive impactful results.
+      </p>
+    </div>
+
+    <footer>
+      <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/mubashirnazeer"><img src="linkedin.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+      </ul>
+      <p class="copyrightText">©2021</p>
+    </footer>
+  </section>
+
+  <script>
+    let menuToggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let sec = document.querySelector('.sec');
+    menuToggle.onclick = function(){
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+      sec.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
